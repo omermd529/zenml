@@ -68,6 +68,8 @@ class PipelineConfigurationUpdate(FrozenBaseModel):
     extra: Dict[str, Any] = {}
     failure_hook_source: Optional[SourceWithValidator] = None
     success_hook_source: Optional[SourceWithValidator] = None
+    start_hook_source: Optional[SourceWithValidator] = None
+    end_hook_source: Optional[SourceWithValidator] = None
     init_hook_source: Optional[SourceWithValidator] = None
     init_hook_kwargs: Optional[Dict[str, Any]] = None
     cleanup_hook_source: Optional[SourceWithValidator] = None
